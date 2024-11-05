@@ -1,7 +1,7 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 #if ENABLE_INPUT_SYSTEM 
 using UnityEngine.InputSystem;
-using UnityEngine.Rendering.UI;
 #endif
 
 /* Note: animations are called via the controller for both the character and capsule using animator null checks
@@ -20,7 +20,12 @@ namespace StarterAssets
         public float MoveSpeed = 2.0f;
 
         [Tooltip("Sprint speed of the character in m/s")]
-        public float SprintSpeed = 7.335f;
+        public float SprintSpeed = 5.335f;
+
+        //My shit code
+        public float dashSpeed = 15f;
+        private bool isDashing = false;
+        
 
         [Tooltip("How fast the character turns to face movement direction")]
         [Range(0.0f, 0.3f)]
@@ -28,7 +33,6 @@ namespace StarterAssets
 
         [Tooltip("Acceleration and deceleration")]
         public float SpeedChangeRate = 10.0f;
-        public float Sensitivity = 1f;
 
         public AudioClip LandingAudioClip;
         public AudioClip[] FootstepAudioClips;
@@ -36,7 +40,7 @@ namespace StarterAssets
 
         [Space(10)]
         [Tooltip("The height the player can jump")]
-        public float JumpHeight = 3.2f;
+        public float JumpHeight = 1.2f;
 
         [Tooltip("The character uses its own gravity value. The engine default is -9.81f")]
         public float Gravity = -15.0f;
@@ -107,7 +111,6 @@ namespace StarterAssets
         private CharacterController _controller;
         private StarterAssetsInputs _input;
         private GameObject _mainCamera;
-        private bool _rotateOnMove = true;
 
         private const float _threshold = 0.01f;
 
@@ -163,7 +166,26 @@ namespace StarterAssets
             GroundedCheck();
             Move();
         }
-
+        private void FixedUpdate()
+        {
+            Dash();
+        }
+        private void Dash()
+        {
+            if (Input.GetKey(KeyCode.LeftControl) && Grounded == false)
+            {
+                StartCoroutine(DoDash());
+            }
+        }
+        private IEnumerator DoDash()
+        {
+            isDashing = true;
+            MoveSpeed = dashSpeed;
+            yield return new WaitForSeconds(1f);
+            MoveSpeed = 2.0f;
+            isDashing = false;
+            Grounded = true;
+        }
         private void LateUpdate()
         {
             CameraRotation();
@@ -201,8 +223,8 @@ namespace StarterAssets
                 //Don't multiply mouse input by Time.deltaTime;
                 float deltaTimeMultiplier = IsCurrentDeviceMouse ? 1.0f : Time.deltaTime;
 
-                _cinemachineTargetYaw += _input.look.x * deltaTimeMultiplier * Sensitivity;
-                _cinemachineTargetPitch += _input.look.y * deltaTimeMultiplier * Sensitivity;
+                _cinemachineTargetYaw += _input.look.x * deltaTimeMultiplier;
+                _cinemachineTargetPitch += _input.look.y * deltaTimeMultiplier;
             }
 
             // clamp our rotations so our values are limited 360 degrees
@@ -264,10 +286,7 @@ namespace StarterAssets
                     RotationSmoothTime);
 
                 // rotate to face input direction relative to camera position
-                if (_rotateOnMove)
-                {
                 transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
-                }
             }
 
 
@@ -393,14 +412,6 @@ namespace StarterAssets
             {
                 AudioSource.PlayClipAtPoint(LandingAudioClip, transform.TransformPoint(_controller.center), FootstepAudioVolume);
             }
-        }
-        public void SetSensitivity(float newSensitivity)
-        {
-            Sensitivity = newSensitivity;
-        }
-        public void setRotateOnMove(bool newRotateOnMove)
-        {
-            _rotateOnMove = newRotateOnMove;
         }
     }
 }
