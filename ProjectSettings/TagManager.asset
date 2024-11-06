@@ -6,6 +6,8 @@ TagManager:
   tags:
   - CinemachineTarget
   - pickup
+  - Fireball
+  - Wood
   layers:
   - Default
   - TransparentFX
