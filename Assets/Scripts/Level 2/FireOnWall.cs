@@ -16,7 +16,7 @@ public class FireOnWall : MonoBehaviour
             if (hitParticles != null)
             {
                 hitParticles.gameObject.SetActive(true);
-                hitParticles.transform.position = transform.position; // Move particles to collision point
+               // hitParticles.transform.position = transform.position; // Move particles to collision point
                 hitParticles.Play();
             }
 
