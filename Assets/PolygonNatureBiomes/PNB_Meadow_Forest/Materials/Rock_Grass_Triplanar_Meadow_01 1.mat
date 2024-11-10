@@ -7,13 +7,13 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Triplanar_Glacier_01 1
-  m_Shader: {fileID: 4800000, guid: e50454e866ecbb14887b487f6586f84f, type: 3}
+  m_Name: Rock_Grass_Triplanar_Meadow_01 1
+  m_Shader: {fileID: 4800000, guid: 66f8401a4c881134f8803eceae302347, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 0
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -23,44 +23,56 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Sides:
-        m_Texture: {fileID: 2800000, guid: 37284fe58b8fa674bbef407e74232be9, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SidesEmissive:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SidesMetallic:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
+        m_Texture: {fileID: 2800000, guid: 39b4fe910d1f8744295ef435fdc0e725, type: 3}
+        m_Scale: {x: 5, y: 5}
         m_Offset: {x: 0, y: 0}
     - _SidesNormal:
-        m_Texture: {fileID: 2800000, guid: cda7ac7d3d92ca6418dce22bdb318d94, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SidesSmoothness:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 521ceafff1ffd164294938dd33dbc3ab, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Top:
-        m_Texture: {fileID: 2800000, guid: 950580de6d73d3e49a66cbfd22cbbf9d, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _TopEmissive:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _TopMetallic:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: de513bead77975943828ba3d53508bce, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TopNormal:
-        m_Texture: {fileID: 2800000, guid: 686cd9f11644fba4b9831f855dbe5295, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _TopSmoothness:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: cab96a62a647e024a9868ca6bb815a34, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -78,26 +90,32 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaCutoff: 0.5
-    - _ColourFalloff: 3.06
-    - _ColourFalloff1: 1
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
     - _EnvironmentReflections: 1
     - _FallOff: 10
+    - _FallOff1: 40.1
+    - _FallOff2: 100
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _SideMetallic: 0
-    - _SideSmoothness: 0.2
+    - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _Tiling: 0.14
-    - _TopMetallic: 0
-    - _TopSmoothness: 0.2
+    - _SrcBlend: 1
+    - _Tiling: 0.2
+    - _UVSec: 0
+    - _ZWrite: 1
     - __dirty: 0
     m_Colors:
-    - _DeepColor: {r: 0.23629406, g: 0.72990835, b: 0.8490566, a: 0}
-    - _DeepColor1: {r: 0.075058796, g: 0.14486006, b: 0.34117648, a: 0}
-    - _DeepColormulti: {r: 0.2747864, g: 0.85694015, b: 0.8962264, a: 0}
-    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _ShallowColor: {r: 0.14893797, g: 0.54042083, b: 0.723, a: 0}
-    - _ShallowColor1: {r: 0.032233994, g: 0.32010615, b: 0.45400003, a: 0}
-    - _ShallowColoradd: {r: 0.10426309, g: 0.491625, b: 0.6698113, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
