@@ -1,20 +1,18 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class SelfDestructAfterTouch : MonoBehaviour
+public class SelfDestructPlatform : MonoBehaviour
 {
-    public string triggerTag = "TriggerObject"; // Tag of the object that triggers the shaking and deletion
-    public float shakeDuration = 3.0f; // Duration to shake before destruction
+    public string playerTag = "Player"; // Tag for the player GameObject
+    public float shakeDuration = 1.0f; // Duration of the shake (1 second)
     public float shakeIntensity = 0.1f; // Intensity of the shake
 
-    private bool isShaking = false; // Track if shaking is in progress
-    private Vector3 originalPosition; // Store original position for shaking
+    private Vector3 originalPosition; // Original position of the platform
 
     private void OnTriggerEnter(Collider other)
     {
-        // Check if the colliding object has the specified tag
-        if (other.gameObject.CompareTag(triggerTag) && !isShaking)
+        // Check if the player stepped on the platform
+        if (other.CompareTag(playerTag))
         {
             // Start the shaking and self-destruction process
             StartCoroutine(ShakeAndDestroy());
@@ -23,30 +21,27 @@ public class SelfDestructAfterTouch : MonoBehaviour
 
     private IEnumerator ShakeAndDestroy()
     {
-        isShaking = true;
         originalPosition = transform.position;
-
         float elapsed = 0.0f;
 
         while (elapsed < shakeDuration)
         {
-            // Random shake offset
+            // Create a random shake offset
             float offsetX = Random.Range(-shakeIntensity, shakeIntensity);
             float offsetY = Random.Range(-shakeIntensity, shakeIntensity);
-            float offsetZ = Random.Range(-shakeIntensity, shakeIntensity);
 
-            // Apply the shake offset
-            transform.position = originalPosition + new Vector3(offsetX, offsetY, offsetZ);
+            // Apply the shake offset to the platform's position
+            transform.position = originalPosition + new Vector3(offsetX, offsetY, 0);
 
-            // Wait until the next frame
+            // Increment elapsed time and wait until the next frame
             elapsed += Time.deltaTime;
             yield return null;
         }
 
-        // Reset to the original position before deletion
+        // Reset the position to the original before destruction
         transform.position = originalPosition;
 
-        // Destroy the GameObject
+        // Destroy the platform after the shake duration
         Destroy(gameObject);
     }
 }
