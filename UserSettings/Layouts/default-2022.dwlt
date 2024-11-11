@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 120
+  controlID: 59
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -192,8 +192,8 @@ MonoBehaviour:
     y: 0
     width: 291.2
     height: 410.4
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -272,8 +272,8 @@ MonoBehaviour:
     y: 0
     width: 362.40002
     height: 722.8
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -623,9 +623,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -73.36702, y: 68.34686, z: 68.72481}
+    m_Target: {x: -86.10023, y: 39.40382, z: -24.185951}
     speed: 2
-    m_Value: {x: -73.36702, y: 68.34686, z: 68.72481}
+    m_Value: {x: -86.10023, y: 39.40382, z: -24.185951}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -671,13 +671,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.05873831, y: -0.19460051, z: 0.0065714866, w: -0.9810257}
+    m_Target: {x: 0.027087381, y: 0.9808257, z: 0.14616783, w: -0.14230548}
     speed: 2
-    m_Value: {x: -0.069237165, y: -0.18945237, z: 0.008339046, w: -0.9794103}
+    m_Value: {x: 0.02510587, y: 0.9804621, z: 0.12808816, w: -0.14716357}
   m_Size:
-    m_Target: 1.764601
+    m_Target: 14.585545
     speed: 2
-    m_Value: 1.764601
+    m_Value: 14.585545
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -739,24 +739,24 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 2943.6}
+      scrollPos: {x: 0, y: 4384}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 10fbffffb88f00003691000068920000f493000000950000
+      m_ExpandedIDs: 5cacfefff0c2feff10fbffffc48e0000888f0000f6900000be9100006e920000229300000e9500007a95000060960000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Fog
+        m_OriginalName: Fog
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 37006
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -911,7 +911,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/PolygonNatureBiomes/PNB_Meadow_Forest/Prefabs
+    - Assets/Face Texture
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -919,16 +919,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/PolygonNatureBiomes/PNB_Meadow_Forest/Prefabs
+  - Assets/Face Texture
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\anvik\UnityProjects\TrialOfMistvaleUnity01
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 547}
-    m_SelectedIDs: 5ea30000
-    m_LastClickedID: 41822
-    m_ExpandedIDs: 00000000a0a10000a2a10000a4a10000a6a10000a8a10000aaa10000aca10000aea10000b0a10000b2a10000b4a10000b6a10000b8a10000baa1000000ca9a3b
+    scrollPos: {x: 0, y: 175}
+    m_SelectedIDs: d6a40000
+    m_LastClickedID: 42198
+    m_ExpandedIDs: 0000000078a300007aa300007ca300007ea3000080a3000084a3000086a3000088a300008ca300008ea3000090a3000092a30000d4a4000074bf00006825010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -956,7 +956,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a0a10000a2a10000a4a10000a6a10000a8a10000aaa10000aca10000aea10000b0a10000b2a10000b4a10000b6a10000b8a10000baa10000
+    m_ExpandedIDs: 0000000078a300007aa300007ca300007ea3000080a3000082a3000084a3000086a3000088a300008aa300008ca300008ea3000090a3000092a30000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -983,8 +983,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c623000076b3010006740100b2ea000076740000d2b50000
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c623000076b3010006740100b2ea000076740000d2b5000072250100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
