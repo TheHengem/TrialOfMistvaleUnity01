@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -67,10 +67,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1272
     y: 0
-    width: 264
-    height: 722.8
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+    width: 603
+    height: 1299
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -93,8 +93,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 296.8
-    height: 444.8
+    width: 482
+    height: 783
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
@@ -267,10 +267,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 296.8
+    x: 482
     y: 0
-    width: 975.2
-    height: 444.8
+    width: 1475
+    height: 783
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
@@ -325,7 +325,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Polygon Dungeon All Together/PolygonDungeon/Prefabs/Environments/Floors
+    - Assets/Audio
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -333,16 +333,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Polygon Dungeon All Together/PolygonDungeon/Prefabs/Environments/Floors
+  - Assets/Audio
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\heynt\UnityProjects\TrialOfMistvaleUnity01
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 367}
-    m_SelectedIDs: 1c850100
-    m_LastClickedID: 99612
-    m_ExpandedIDs: 0000000006a600003ca6000048a6000056a60000c0840100ca840100a2c60100b02d0200e08702009888020000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: c2400100
+    m_LastClickedID: 82114
+    m_ExpandedIDs: 000000002a310000eea7000000a8000002a80000e2b10000eab10000f4b100001a33010070330100743301007833010000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: assets
@@ -370,7 +370,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000006a60000
+    m_ExpandedIDs: 00000000eea70000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -398,7 +398,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c623000076b3010006740100b2ea000076740000d2b500006491000050af010070af010006b8010000000000
+    m_ExpandedInstanceIDs: c623000076b3010006740100b2ea000076740000d2b500006491000050af010070af010006b80100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: PolygonDungeon
@@ -496,9 +496,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 73.6
-    width: 295.8
-    height: 423.8
+    y: 73
+    width: 481
+    height: 762
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -511,10 +511,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 60}
-      m_SelectedIDs: 042c0300
-      m_LastClickedID: 207876
-      m_ExpandedIDs: bcacfbffa45cfcff3871fdff9e71fdff1a73fdffba7bfdffc2a9fdffcaaffdffa2b0fdff8429feff8629feff96d0feffe019ffffea19ffffa81effff6a30ffff9a39ffff3443ffff504dffffa481ffffaa81ffff78adffffb0b2fffff6faffff168f000038950000e6b400009a790100067a0100267d0100e27d0100e87e0100f87e0100387f010018de010018e4010074fa0100fe140200ae1802000e3c02002c3c0200bc6c0200806d02009e6d0200c8a1020034a50200c8a7020024be0200042c0300122d0300
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 40e4ffff7ee5ffff86e7ffff4ea900006aaa0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: SM_Env_Tiles_01
@@ -559,10 +559,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 296.80002
-    y: 73.6
-    width: 973.2
-    height: 423.8
+    x: 482
+    y: 73
+    width: 1473
+    height: 762
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -882,9 +882,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -71.416176, y: 2.504478, z: -3.5281467}
+    m_Target: {x: -87.0627, y: 17.059275, z: 86.86758}
     speed: 2
-    m_Value: {x: -71.416176, y: 2.504478, z: -3.5281467}
+    m_Value: {x: -87.0627, y: 17.059275, z: 86.86758}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -930,9 +930,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.09381972, y: 0.8229889, z: -0.1223425, w: 0.55016536}
+    m_Target: {x: -0.1429869, y: 0.81529915, z: -0.2272143, w: -0.51292783}
     speed: 2
-    m_Value: {x: 0.093643725, y: 0.82144505, z: -0.12211299, w: 0.5491333}
+    m_Value: {x: -0.1433362, y: 0.814578, z: -0.22701328, w: -0.51418126}
   m_Size:
     m_Target: 10
     speed: 2
@@ -982,10 +982,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 296.80002
-    y: 73.6
-    width: 973.2
-    height: 423.8
+    x: 482
+    y: 73
+    width: 1473
+    height: 762
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1038,23 +1038,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 973.2
-      height: 402.8
-    m_Scale: {x: 0.46620372, y: 0.4662037}
-    m_Translation: {x: 486.6, y: 201.4}
+      width: 1473
+      height: 741
+    m_Scale: {x: 0.6861111, y: 0.6861111}
+    m_Translation: {x: 736.5, y: 370.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1043.7498
-      y: -432
-      width: 2087.4995
-      height: 864
+      x: -1073.4413
+      y: -540
+      width: 2146.8826
+      height: 1080
     m_MinimalGUI: 1
-  m_defaultScale: 0.4662037
-  m_LastWindowPixelSize: {x: 1216.5, y: 529.75}
+  m_defaultScale: 0.6861111
+  m_LastWindowPixelSize: {x: 1473, y: 762}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
@@ -1082,9 +1082,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 508.80002
-    width: 1172.6
-    height: 266.59998
+    y: 856
+    width: 1956
+    height: 495
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
