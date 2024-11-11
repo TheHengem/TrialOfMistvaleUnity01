@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7003852316882073551}
   - component: {fileID: -5258994575033927399}
   - component: {fileID: -2051888812808701110}
+  - component: {fileID: -2822095466305161829}
   m_Layer: 6
   m_Name: pfBulletProjectile
   m_TagString: FireBall
@@ -152,6 +153,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionEffect: {fileID: 9044037620433839814, guid: 000532bbb5d8922438bccbe1dce05ea6,
     type: 3}
+--- !u!114 &-2822095466305161829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9044037620433839814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1cfcc1c675d2e846b229ab0da4064b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTag: FireBall
+  platform: {fileID: 0}
+  targetPosition: {x: 0, y: 0, z: 0}
+  platformSpeed: 2
 --- !u!1001 &2574119459041779167
 PrefabInstance:
   m_ObjectHideFlags: 0

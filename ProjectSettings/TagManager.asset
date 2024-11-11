@@ -9,6 +9,7 @@ TagManager:
   - Wood
   - FireBall
   - HitObject
+  - Platform
   layers:
   - Default
   - TransparentFX
