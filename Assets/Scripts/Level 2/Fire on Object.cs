@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class FireonObject : MonoBehaviour
 {
-    public string targetTag = "FireBall";         // Set the tag of the object to trigger the reaction
+    public string targetTag = "FireBall";        
     public ParticleSystem hitParticles;
-    //public GameObject fireEffect; // Assign the particle system in the Inspector
     private void OnTriggerEnter(Collider other)
     {
         // Check if the other object has the specified tag
@@ -16,11 +15,10 @@ public class FireonObject : MonoBehaviour
             if (hitParticles != null)
             {
                 hitParticles.gameObject.SetActive(true);
-                // hitParticles.transform.position = transform.position; // Move particles to collision point
                 hitParticles.Play();
             }
 
-            // Start the disappearing coroutine
+            Debug.Log("let there be fire"); 
            
         }
     }
