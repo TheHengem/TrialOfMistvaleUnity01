@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public GameObject mainMenuUI; // Main menu canvas/UI element
     public GameObject targetMenuUI; // The UI element for the menu to reveal
+    public GameObject controlsMenuUI;
 
     void Start()
     {
@@ -21,7 +22,7 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Level 1");
+        SceneManager.LoadScene("IntroCutscene");
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -46,5 +47,11 @@ public void SwitchBackMenuCanvas()
         Debug.Log("Switching back to main menu");
         mainMenuUI.SetActive(true);  // Hide the main menu
         targetMenuUI.SetActive(false); // Show the target menu
+    }
+    public void SwitchToControlsanvas()
+    {
+        // Toggle visibility of the menus
+        controlsMenuUI.SetActive(true);  // Hide the main menu
+        mainMenuUI.SetActive(false); // Show the target menu
     }
 }
