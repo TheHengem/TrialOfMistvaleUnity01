@@ -18562,6 +18562,8 @@ GameObject:
   - component: {fileID: 512439227}
   - component: {fileID: 512439230}
   - component: {fileID: 512439229}
+  - component: {fileID: 512439232}
+  - component: {fileID: 512439231}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -18640,6 +18642,44 @@ MonoBehaviour:
   NodeID: 1
   TMPFont: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &512439231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512439226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 4
+  TMPFont: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  Icon: {fileID: 21300000, guid: 1eac01dbddf5b654a8c48dbd889ca8e3, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &512439232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512439226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 3
+  TMPFont: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  Icon: {fileID: 21300000, guid: 1eac01dbddf5b654a8c48dbd889ca8e3, type: 3}
   Audio: {fileID: 0}
 --- !u!4 &515705573 stripped
 Transform:
@@ -21400,9 +21440,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 3
-  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":387.333344,\"yPos\":108.333344},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Yes\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":399.333344,\"yPos\":214.333359},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No\",\"parentUIDs\":[0],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":130.333344,\"yPos\":125.333336},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"That
+  CurrentIDCounter: 5
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":222.000031,\"yPos\":230.333344},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Yes\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":216.000031,\"yPos\":331.666656},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No\",\"parentUIDs\":[0],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":-34.99997,\"yPos\":247.333313},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"That
     jump looks too long\u2026Oh, are you waiting for me to go?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Nervous
+    Elf\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":463.333374,\"yPos\":205.333313},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"N-No
+    need, go first! I\u2019m just looking around, I\u2019ll jump soon, I s-swear\u2026\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Nervous
+    Elf\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":471.333374,\"yPos\":334.666656},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oh,
+    right, of course not...\\nSorry, go on ahead!\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Nervous
     Elf\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: Nervous Elf
@@ -21412,6 +21456,8 @@ MonoBehaviour:
   - {fileID: 512439227}
   - {fileID: 512439230}
   - {fileID: 512439229}
+  - {fileID: 512439232}
+  - {fileID: 512439231}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
