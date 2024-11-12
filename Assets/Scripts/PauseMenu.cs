@@ -7,6 +7,7 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenuUI; // The UI panel for the pause menu
     public bool isPaused = false;  // Track if the game is currently paused
+    public bool showMouse = false;
 
 
     void Start()
@@ -15,7 +16,6 @@ public class PauseMenu : MonoBehaviour
     }
     void Update()
     {
-        MouseRevealer();
         // Check for the Escape key to toggle pause
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -33,6 +33,8 @@ public class PauseMenu : MonoBehaviour
     // Resume the game
     public void Resume()
     {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         pauseMenuUI.SetActive(false);      // Hide pause menu UI
         Time.timeScale = 1f;               // Unfreeze game time
         isPaused = false;
@@ -41,26 +43,14 @@ public class PauseMenu : MonoBehaviour
     // Pause the game
     void Pause()
     {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         pauseMenuUI.SetActive(true);       // Show pause menu UI
         Time.timeScale = 0f;               // Freeze game time
         isPaused = true;
     }
 
     // Restart the current level
-
-    public void MouseRevealer()
-    {
-        if(isPaused)
-        {
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
-        }
-        else
-        {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
-        }
-    }
 
     public void Restart()
     {

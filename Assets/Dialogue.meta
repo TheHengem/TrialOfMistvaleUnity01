@@ -1,8 +1,14 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Effects/New Material.mat.meta
+guid: f042ceb36f15d09488a3e9d1b1f04e42
+NativeFormatImporter:
+========
 guid: 06ecf867e734fe5478978f35c3601dba
 folderAsset: yes
 DefaultImporter:
+>>>>>>>> origin/main:Assets/Dialogue.meta
   externalObjects: {}
+  mainObjectFileID: 2100000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
