@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameOver : MonoBehaviour
+public class EndScreen : MonoBehaviour
 {
     public GameObject endMenuUI; // Main menu canvas/UI element
+    public GameObject creditsMenuUI; // The UI element for the menu to reveal
 
     // Start is called before the first frame update
     void Awake()
@@ -30,22 +30,18 @@ public class GameOver : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
-    public void RestartLevel1()
+    public void ToCredits()
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        endMenuUI.SetActive(false);
+        creditsMenuUI.SetActive(true);
+    }
+    public void BacktoEndMenu()
+    {
+        endMenuUI.SetActive(true);
+        creditsMenuUI.SetActive(false);
+    }
+    public void RestartGame()
+    {
         SceneManager.LoadScene("Level 1");
-    }
-    public void RestartLevel2()
-    {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
-        SceneManager.LoadScene("Level 2");
-    }
-    public void RestartLevel3()
-    {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
-        SceneManager.LoadScene("Level 3");
     }
 }
