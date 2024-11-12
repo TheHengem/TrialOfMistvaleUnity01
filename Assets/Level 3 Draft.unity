@@ -5964,7 +5964,7 @@ GameObject:
   - component: {fileID: 1761139696}
   - component: {fileID: 1761139695}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: ConversationManagerCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
