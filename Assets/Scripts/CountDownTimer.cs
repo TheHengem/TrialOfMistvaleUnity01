@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CountDownTimer : MonoBehaviour
 {
@@ -44,7 +45,7 @@ public class CountDownTimer : MonoBehaviour
     {
         // This method is called when the timer reaches zero
         // Customize this method to specify what happens at the end of the countdown
-        Debug.Log("Time's up! Execute custom action here.");
+        SceneManager.LoadScene("GameOverLevel3");
     }
 }
 

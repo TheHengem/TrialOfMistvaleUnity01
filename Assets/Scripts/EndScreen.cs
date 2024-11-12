@@ -42,6 +42,6 @@ public class EndScreen : MonoBehaviour
     }
     public void RestartGame()
     {
-        SceneManager.LoadScene("Level 1");
+        SceneManager.LoadScene("IntroCutscene");
     }
 }
