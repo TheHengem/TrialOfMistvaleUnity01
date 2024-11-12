@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -5258994575033927399}
   - component: {fileID: -2051888812808701110}
   - component: {fileID: -2822095466305161829}
-  m_Layer: 6
+  m_Layer: 12
   m_Name: pfBulletProjectile
   m_TagString: FireBall
   m_Icon: {fileID: 0}
@@ -180,7 +180,7 @@ PrefabInstance:
     - target: {fileID: 739502281706564519, guid: 9a997858145e59e4a8d5b501c9207046,
         type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2810931503579437274, guid: 9a997858145e59e4a8d5b501c9207046,
         type: 3}
@@ -190,7 +190,7 @@ PrefabInstance:
     - target: {fileID: 2810931503579437274, guid: 9a997858145e59e4a8d5b501c9207046,
         type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6009029854766141892, guid: 9a997858145e59e4a8d5b501c9207046,
         type: 3}
@@ -281,10 +281,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3398038241446022046}
     m_Modifications:
+    - target: {fileID: 417761079494231308, guid: 7800b8f6b712bfe49bd663eeb3ebe1e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 417761080263594737, guid: 7800b8f6b712bfe49bd663eeb3ebe1e4,
         type: 3}
       propertyPath: m_Name
       value: Explosion Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 417761080263594737, guid: 7800b8f6b712bfe49bd663eeb3ebe1e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 417761080263594737, guid: 7800b8f6b712bfe49bd663eeb3ebe1e4,
         type: 3}
@@ -340,6 +350,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 417761080798259113, guid: 7800b8f6b712bfe49bd663eeb3ebe1e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
