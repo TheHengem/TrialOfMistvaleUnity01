@@ -44,6 +44,9 @@ public class Spellcraft : MonoBehaviour
 
         if (starterAssetsInputs.aim)
         {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Debug.Log("Aiming and Hiding Mouse");
         canCast = true;
         aimVirtualCamera.gameObject.SetActive(true);
         thirdPersonController.SetSensitivity(aimSenstivity);
